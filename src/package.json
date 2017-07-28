@@ -1,0 +1,34 @@
+{
+  "name": "setter",
+  "version": "1.0.0",
+  "description": "Just an experiment with web typography, using flex and css and some js tricks",
+  "main": "index.js",
+  "dependencies": {
+    "webpack-dev-server": "^2.6.1",
+    "webpack": "^3.4.1"
+  },
+  "devDependencies": {
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "start": "webpack --config ./webpack/webpack.config.js -w",
+    "build": "webpack -p",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olemak/setter.git"
+  },
+  "keywords": [
+    "javascript",
+    "typography",
+    "css",
+    "html"
+  ],
+  "author": "Ole Martin Kristiansen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/olemak/setter/issues"
+  },
+  "homepage": "https://github.com/olemak/setter#readme"
+}
