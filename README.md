@@ -4,7 +4,8 @@ Whimsical experiments with automated web typography
 ## Usage
 1. Clone the repo
 2. npm install
-3. npm start
+3. cd src <- Yes I know. WIll move things about.
+4. npm start
 
 Look at the pretties on localhost:8080
 
@@ -16,6 +17,7 @@ Change things as desired in the css, if you like. The class structure is very si
   .short.word
   .medium.word
   .long.word
+  *etc*
   
   .single.word // denotes a single character word, like "&" or "I". Could be more semantic
   
