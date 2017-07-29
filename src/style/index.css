@@ -1,5 +1,6 @@
 .sentence {
     margin: 1em;
+    padding: 1em 0;
     display: flex;
     flex-flow: row wrap;
     border: 1px solid gray;
