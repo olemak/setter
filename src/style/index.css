@@ -7,24 +7,29 @@
 }
 
 .word {
-    border: 1px solid pink;
     flex: 1 1 auto;
     font-size: 2em;
+    text-align: center;
 }
 
 .short.word {
     flex-direction: column;
+    line-height: 0.84em;
+}
+
+.long.word {
+    font-size: 5em;
 }
 
 .short.word .character {
     display: flex;
     flex: 1 1 auto;
     justify-content: center;
-    border: 1px solid gray;
 }
 
 .single.word {
     font-size: 4em;
+
 }
 
 .medium.word {
