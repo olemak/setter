@@ -1,5 +1,3 @@
-const phrases = () => document.querySelectorAll('[data-target]')
-
 const process = word => {
     let elem = document.createElement("SPAN"), wordLength;
           switch (word.length) {
@@ -41,22 +39,22 @@ const shortProcess = word => {
         choppedWord.appendChild(elem)   
     });
     
-
-//    choppedWord = document.createTextNode(word);
-
-    console.dir(choppedWord)
-
     return choppedWord
 }
 
-const setter =  ()=> { 
-    phrases().forEach(phrase=>{
-        let words = phrase.innerText.split(' ');
-        let target = document.querySelector(`[data-name="${phrase.dataset.target}"]`)
+const setter =  phrases => { 
+    let documentBody = document.querySelector('body');
+    phrases.forEach(phrase=>{
+        let words = phrase.text.split(' ');
+        let target = document.createElement('DIV');
+            target.classList.add('sentence');
             
         words.map( word => { 
             target.appendChild(process(word));
         })
+
+        documentBody.appendChild(target);
+
     })
 }
 

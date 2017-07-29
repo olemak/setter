@@ -30,7 +30,7 @@ module.exports = {
    },
    plugins: [
       new HtmlWebpackPlugin({
-        title: 'Hot Module Replacement'
+        title: '[setter]'
       }),
       new webpack.HotModuleReplacementPlugin()
     ]

@@ -1,21 +1,36 @@
 .sentence {
-    border: 1px solid red;
-
+    margin: 1em;
     display: flex;
-
     flex-flow: row wrap;
+    border: 1px solid gray;
+    align-items: center;
 }
 
 .word {
+    border: 1px solid pink;
     flex: 1 1 auto;
-    border: 1px solid blue;
+    font-size: 2em;
 }
 
-.short {
+.short.word {
     flex-direction: column;
 }
 
-.character {
-    border: 1px solid green;
+.short.word .character {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    border: 1px solid gray;
 }
 
+.single.word {
+    font-size: 4em;
+}
+
+.medium.word {
+    font-size: 3em;
+}
+
+.long.word {
+    min-width: 80%;
+}
