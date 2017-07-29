@@ -1,4 +1,5 @@
-import setter from './modules/setter.js'
+import setter from './modules/setter.js';
+import './style/index.css';
 
 (() => { function ready() {
     setter();
