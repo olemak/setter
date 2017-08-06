@@ -3,7 +3,6 @@
     padding: 1em 0;
     display: flex;
     flex-flow: row wrap;
-    border: 1px solid gray;
     align-items: center;
 }
 
@@ -11,38 +10,37 @@
     flex: 1 1 auto;
     font-size: 2em;
     text-align: center;
-    border: 1px solid grey;
 }
 
 
-.short.word {
+.word.short {
     flex-direction: column;
     line-height: 0.84em;
 }
 
-.long.word {
-    font-size: 5em;
+.word.medium {
+    font-size: 16vw;
 }
 
-.word .inner {
-    border: 1px solid lightpink;
+.word.long {
+    font-size: 18vw;
+    min-width: 80%;
 }
 
-.short.word .character {
+.word.extra-long {
+    font-size: 14vw;
+}
+
+.word.short .character {
     display: flex;
     flex: 1 1 auto;
     justify-content: center;
 }
 
-.single.word {
+.word.single {
     font-size: 4em;
-
 }
 
-.medium.word {
-    font-size: 3em;
-}
-
-.long.word {
-    min-width: 80%;
+.word:not(.extra-long):last-child .inner{
+    font-size: 22vw;
 }

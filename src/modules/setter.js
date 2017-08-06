@@ -1,5 +1,3 @@
-import adjustFontSize from './adjustFontSize.js';
-
 const process = word => {
     let elem = document.createElement("SPAN"), wordLength;
           switch (word.length) {
@@ -15,17 +13,20 @@ const process = word => {
               
               case 4:
               case 5:
-              case 6:
                 wordLength = 'medium'; 
               break;
-              
+
+              case 6:
+              case 7:
+                wordLength = 'long'; 
+              break;
+             
               default:
-                  wordLength = 'long';
+                  wordLength = 'extra-long';
               break;
           }
         elem.classList.add("word");
         elem.classList.add(wordLength);
-        elem = adjustFontSize(elem);
         wordLength !== 'short' ?
             elem.appendChild(longProcess(word))
             : elem.appendChild(shortProcess(word));

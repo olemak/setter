@@ -11,6 +11,9 @@ import './style/index.css';
       },
       {
         text: "These are the hours of doubt"
+      },
+      {
+        text: "Our winter of discotents"
       }
   ]);
 };  
