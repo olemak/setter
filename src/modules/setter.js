@@ -1,3 +1,5 @@
+import adjustFontSize from './adjustFontSize.js';
+
 const process = word => {
     let elem = document.createElement("SPAN"), wordLength;
           switch (word.length) {
@@ -23,10 +25,19 @@ const process = word => {
           }
         elem.classList.add("word");
         elem.classList.add(wordLength);
+        elem = adjustFontSize(elem);
         wordLength !== 'short' ?
-            elem.appendChild(document.createTextNode(word))
+            elem.appendChild(longProcess(word))
             : elem.appendChild(shortProcess(word));
     return elem;
+}
+
+const longProcess = word => {
+    let longWordElement = document.createElement('SPAN');
+        longWordElement.className = 'inner';
+        let longWordText = document.createTextNode(word);
+        longWordElement.appendChild(longWordText);
+        return longWordElement;
 }
 
 const shortProcess = word => {

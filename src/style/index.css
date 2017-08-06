@@ -11,7 +11,9 @@
     flex: 1 1 auto;
     font-size: 2em;
     text-align: center;
+    border: 1px solid grey;
 }
+
 
 .short.word {
     flex-direction: column;
@@ -20,6 +22,10 @@
 
 .long.word {
     font-size: 5em;
+}
+
+.word .inner {
+    border: 1px solid lightpink;
 }
 
 .short.word .character {
